@@ -10,7 +10,7 @@ pipeline {
                 url: 'https://github.com/islemtaleb/CD.git';
                      
             }
-        }
+        
         }
      stage('build'){
     steps {
@@ -27,4 +27,7 @@ pipeline {
 }
 }
 
-        }
+        
+
+}
+}
