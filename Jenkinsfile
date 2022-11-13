@@ -37,6 +37,15 @@ stage('Push to Dockerhub'){
 
 }
 }
+stage('Monitoring_With_docker-compose'){
+    steps {
 
+          script{
+          sh "ansible-playbook Ansible/docker-comp.yml -i Ansible/inventory/host.yml"
+}
+
+
+}
+}
 }
 }

@@ -1,0 +1,6 @@
+---
+# tasks file for docker-compose
+- name: test docker-compose
+  docker_compose:
+    project_src: ~/Continous_Integration_Frontend/
+    state: present
