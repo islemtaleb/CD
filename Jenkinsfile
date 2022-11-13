@@ -27,5 +27,16 @@ pipeline {
 }
 }
 }
+stage('Push to Dockerhub'){
+    steps {
+
+          script{
+          sh "ansible-playbook Ansible/docker-registry.yml -i Ansible/inventory/host.yml"
+}
+
+
+}
+}
+
 }
 }
