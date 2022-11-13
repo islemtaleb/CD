@@ -5,16 +5,13 @@
     name: devops
     build:
     path: /var/lib/jenkins/workspace/test
-    pull: no
     source: build
     state: present
-    force_source: 1
 - name: run container docker
   docker_container:
     name: myapp_container
     image: devops:latest
     state: started
-    recreate: 1
     ports:
     
       - "4200:80"    
