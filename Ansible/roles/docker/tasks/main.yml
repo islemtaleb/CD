@@ -5,7 +5,7 @@
     name: devops
     build:
     path: /var/lib/jenkins/workspace/test
-    pull: 1
+    pull: false
     source: build
     state: present
     force_source: true
