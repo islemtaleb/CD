@@ -8,13 +8,13 @@
     pull: no
     source: build
     state: present
-    force_source: true
+    force_source: 1
 - name: run container docker
   docker_container:
     name: myapp_container
     image: devops:latest
     state: started
-    recreate: true
+    recreate: 1
     ports:
     
       - "4200:80"    
