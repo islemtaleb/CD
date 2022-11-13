@@ -4,7 +4,7 @@
   docker_login:
     email: "taleb.islem@esprit.tn"
     username: "islemt"
-    password: "21461251islem"
+    password: "21461251is"
 - name: push to dockerhub
   docker_image:
     name: devops:latest
