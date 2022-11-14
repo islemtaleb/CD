@@ -2,5 +2,5 @@
 # tasks file for docker-compose
 - name: test docker-compose
   docker_compose:
-    project_src: ~/Continous_Integration_Frontend/
+    project_src: ~/islemt/front
     state: present
